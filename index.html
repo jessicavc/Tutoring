@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript practice</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        // var i = 10;
+        // while(i > 0){
+        //     console.log(i);
+        //     i--;
+        // }
+
+        // var i = 0;
+        // while (i <= 20) {
+        //     if (i % 2 === 0) {
+        //         console.log(i);
+        //     }
+        //     i++;
+        // }
+
+        // // Instructions: If length of admitted list is less than 5, i can let anyone in. If length of admitted list is greater than 5, only people will name starting with "A" can be let it. Those who are not let in are "Denied"
+        //     //this is our starting waiting array
+        var waiting = ["Justin", "Jessica", "Adriana", "Julian", "Bob", "Julie", "Jennifer", "Allison"]
+        //     //this is our admitted array
+        var admitted = []
+        //     //this is our denied array
+        var denied = []
+
+
+        // var i = 0;
+        // while (i <= waiting.length) {
+        //     //condition 1: if admitted is greater than 5, call on waiting to see if letters start with A
+        //     if (admitted.length > 5 && waiting[i][0] === "A") {
+        //         admitted.push(waiting[i])
+        //     }
+        //     // condition 2: if admitted length is less than 5, 
+        //     else if (admitted.length < 5) {
+        //         admitted.push(waiting[i])
+        //     }
+        //     else {
+        //         denied.push(waiting[i])
+        //     }
+        //     i++;
+        // }
+
+        function waitingList(waiting) {
+            var admitted = []
+            //     //this is our denied array
+            var denied = []
+
+
+            var i = 0;
+            while (i <= waiting.length) {
+                //condition 1: if admitted is greater than 5, call on waiting to see if letters start with A
+                if (admitted.length > 5 && waiting[i][0] === "A") {
+                    admitted.push(waiting[i])
+                }
+                // condition 2: if admitted length is less than 5, 
+                else if (admitted.length < 5) {
+                    admitted.push(waiting[i])
+                }
+                else {
+                    denied.push(waiting[i])
+                }
+                i++;
+            }
+        }
+
+        waitingList(waiting);
+        waitingList(["Steve", "Fred", "Bill", "James"])
+        waitingLlist(["blah", "blah", "blue"])
+
+    </script>
+
+</body>
+
+</html>

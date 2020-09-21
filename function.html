@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        //write a function that adds two numbers together
+        //if 2 parameters are both numbers, add them together. if either parameter is not a number, just return parameters
+
+
+        // function name (parameters){
+        //do something
+        // }
+
+        // function numSum(x,y){
+        //     if (typeof(x) === "number" && typeof(y) === "number"){
+        //         return x + y;
+        //     }else {
+        //         return(x,y);
+        //     }
+                
+        // }
+
+        // console.log(typeof (2))
+
+// console.log(numSum(2,3));
+// var a = ["Hello!"]
+
+// console.log(typeof(a))
+
+
+// function timerCountDown () {
+//     var start = 30;
+//     var timer = setInterval(function () {
+//         start--;
+//         console.log(start);
+//         if (start === 0) {
+//             clearInterval(timer);
+//         }
+
+//     }, 1000);
+// }
+
+// timerCountDown();
+
+
+//instructions: write a function that goes through an array of questions and prints questions and possible choices
+
+function printQA(){
+    for (var i = 0; i < questions.length; i++){
+        console.log(questions[i].subject);
+        for (var j = 0; j < questions[i].choices.length; j++){
+            console.log(questions[i].choices[j]);
+    }
+    
+    }
+        
+}
+    
+const questions = [
+  {
+    subject: "Question 1",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer1",
+  },
+  {
+    subject: "Question 2",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer2",
+  },
+  {
+    subject: "Question 3",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer3",
+  },
+  {
+    subject: "Question 4",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer1",
+  },
+  {
+    subject: "Question 5",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer2",
+  },
+  {
+    subject: "Question 6",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer3",
+  },
+  {
+    subject: "Question 7",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer1",
+  },
+  {
+    subject: "Question 8",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer2",
+  },
+  {
+    subject: "Question 9",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer3",
+  },
+  {
+    subject: "Question 10",
+    choices: ["Answer1", "Answer2", "Answer3"],
+    answer: "Answer1",
+  }
+];
+
+printQA();
+
+    </script>
+
+</body>
+
+</html>
