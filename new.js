@@ -5,22 +5,22 @@
 
 //register
 
-// function palindrome(str) {
-//     var str = str.toLowerCase();
-//     var j = (str.length - 1);
+function palindrome(str) {
+    var str = str.toLowerCase();
+    var j = (str.length - 1);
 
-//     for (var i = 0; i < str.length; i++) {
-//         if (str[i] !== str[j]) {
-//             return ("this is not a palindrome") 
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] !== str[j]) {
+            return ("this is not a palindrome") 
             
-//         } else {
-//             j--
-//         } 
+        } else {
+            j--
+        } 
 
-//     } return ("this is a palindrome");
-// }
+    } return ("this is a palindrome");
+}
 
-// palindrome();
+palindrome();
 
 //function called reverseWords 
 //input "Just Keep Swimming" - return "Swimming Keep Just"
